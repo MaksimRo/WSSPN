@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация | WSPN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180.00deg, rgba(255, 255, 255, 0.26),rgb(30, 72, 112) 19.745%);
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+        
+        header {
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .logo {
+            height: 150px;
+        }
+        
+        main {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #555;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="checkbox"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .checkbox-group input {
+            width: auto;
+            margin-right: 10px;
+            
+        }
+        
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        
+        .required::after {
+            content: "*";
+            color: red;
+            margin-left: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Logowspn.png" alt="Логотип WSPN" class="logo">
+    </header>
+    
+    <main>
+        <h1>WSPN</h1>
+        <form>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="medworker" name="medworker">
+                <label for="medworker">Медработник</label>
+                
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="medworker" name="medworker">
+                <label for="medworker">Классный Руководитель</label>
+                
+            </div>
+            
+            <div class="form-group">
+                <label for="firstname" class="required">Имя</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="lastname" class="required">Фамилия</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email" class="required">Электронная почта</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone" class="required">Телефон</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="school" class="required">Школа</label>
+                <input type="text" id="school" name="school" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="position" class="required">Должность/Класс</label>
+                <input type="text" id="position" name="position" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="license" class="required">Номер лицензии/Номер Приказа</label>
+                <input type="text" id="license" name="license" required>
+            </div>
+            <div class="form-group">
+                <label for="license" class="required">Пароль</label>
+                <input type="text" id="password" name="license" required>
+            </div>
+            <a href="WSPNlogin.html"><button type="button" class="submit-btn">Зарегистрироваться</button></a>
+        </form>
+    </main>
+</body>
+</html>

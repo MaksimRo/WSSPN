@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSPN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="image-container">
+            <a href="index.html"><img src="Logowspn.png" alt="Логотип WSPN" class="logo-center"></a>
+            <a href="WSPNprofil.html"><img src="avatar.png" alt="Аватар" class="avatar-right"></a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="block">
+            <div class="button-container">
+                <button type="button" id="newRequestsBtn" class="button active">
+                    Новые заявки
+                </button>
+                <button type="button" id="archiveBtn" class="button">Архив отчётов</button>
+            </div>
+            
+            <div id="newRequestsPanel">
+                <div class="new-request">
+                    <div class="info-field">
+                        <p class="label">ФИО</p>
+                        <p class="value">Сидорова В.А.</p>
+                    </div>
+                    <div class="info-field">
+                        <p class="label">Класс</p>
+                        <p class="value">10-А</p>
+                    </div>
+                    <div class="info-field">
+                        <p class="label">Тип</p>
+                        <p class="value">Аллергия</p>
+                    </div>
+                    <div class="info-field">
+                        <p class="label">Описание</p>
+                        <p class="value">Воспаление</p>
+                    </div>
+                </div>
+                
+                <div class="new-request">
+                    <div class="info-field">
+                        <p class="label">ФИО</p>
+                        <p class="value">Иванов А.С.</p>
+                    </div>
+                    <div class="info-field">
+                        <p class="label">Класс</p>
+                        <p class="value">9-Б</p>
+                    </div>
+                    <div class="info-field">
+                        <p class="label">Тип</p>
+                        <p class="value">Травма</p>
+                    </div>
+                    <div class="info-field">
+                        <p class="label">Описание</p>
+                        <p class="value">Ушиб колена</p>
+                    </div>
+                </div>
+                
+                <div class="new-request">
+                    <div class="info-field">
+                        <p class="label">ФИО</p>
+                        <p class="value">Петрова М.К.</p>
+                    </div>
+                    <div class="info-field">
+                        <p class="label">Класс</p>
+                        <p class="value">11-В</p>
+                    </div>
+                    <div class="info-field">
+                        <p class="label">Тип</p>
+                        <p class="value">ОРВИ</p>
+                    </div>
+                    <div class="info-field">
+                        <p class="label">Описание</p>
+                        <p class="value">Температура 38.5°C</p>
+                    </div>
+                </div>
+                
+                <div class="action-block">
+                    <div class="button-container">
+                        <button type="button" class="button report">Отчёт СанПиН
+                            <img src="Group 20.png" alt="doc" class="button-icon">
+                        </button>
+                        <button type="button" class="button close">Закрыть
+                            <img src="Group 23.png" alt="cancel" class="button-icon">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="archivePanel" class="archive-panel" style="display: none;">
+                <div class="archive-item">
+                    <div class="archive-header">
+                        <span class="archive-date">10.05.2024</span>
+                        <span class="archive-status completed">Завершено</span>
+                    </div>
+                    <div class="archive-content">
+                        <p><strong>Сидорова В.А.</strong> (10-А) - Аллергия</p>
+                        <p>Принятые меры: Антигистаминные препараты</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+</body>
+</html>
